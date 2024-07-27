@@ -11,7 +11,7 @@
   },
   "framework": "nuxt",
   "aliases": {
-    "components": "~~/layers/ui/components",
-    "utils": "~~/layers/ui/lib/utils"
+    "components": "~/../layers/ui/components",
+    "utils": "~/../layers/ui/lib/utils"
   }
 }
