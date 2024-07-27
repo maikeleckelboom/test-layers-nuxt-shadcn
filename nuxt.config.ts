@@ -1,24 +1,19 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import {dirname} from "path";
+import {fileURLToPath} from "url";
+
+const currentDir = dirname(fileURLToPath(import.meta.url))
+
 export default defineNuxtConfig({
     compatibilityDate: '2024-04-03',
+
     devtools: {enabled: true},
 
     future: {
         compatibilityVersion: 4
     },
 
-    modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
-
-    shadcn: {
-        /**
-         * Prefix for all the imported component
-         */
-        prefix: '',
-        /**
-         * Directory that the component lives in.
-         * @default "./components/ui"
-         */
-        componentDir: './layers/ui/components/ui'
+    alias: {
+        '~~': currentDir,
     },
 
     tailwindcss: {

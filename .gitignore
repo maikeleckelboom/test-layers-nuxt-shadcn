@@ -23,5 +23,8 @@ logs
 .env.*
 !.env.example
 
-# bun
+# Lock files
 bun.lockb
+
+# PhpStorm
+.idea
