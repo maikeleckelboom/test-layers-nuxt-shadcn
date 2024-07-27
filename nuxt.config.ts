@@ -19,5 +19,10 @@ export default defineNuxtConfig({
          * @default "./components/ui"
          */
         componentDir: './layers/ui/components/ui'
+    },
+
+    tailwindcss: {
+        viewer: false,
+        cssPath: './layers/ui/assets/css/tailwind.css',
     }
 })

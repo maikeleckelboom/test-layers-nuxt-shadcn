@@ -10,7 +10,7 @@ import {
 import {Button} from '../../layers/ui/components/ui/button'
 </script>
 <template>
-  <div>
+  <div class="flex gap-2 m-2">
     <div>
       <Button variant="outline">
         Test Button
